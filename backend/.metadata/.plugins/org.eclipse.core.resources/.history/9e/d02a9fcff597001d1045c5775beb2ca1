@@ -1,0 +1,5 @@
+package com.kocmetehan.bikemate.controller;
+
+public class StudentController {
+
+}

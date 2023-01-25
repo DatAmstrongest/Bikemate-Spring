@@ -1,0 +1,5 @@
+package com.kocmetehan.bikemate.service;
+
+public interface UserService {
+
+}

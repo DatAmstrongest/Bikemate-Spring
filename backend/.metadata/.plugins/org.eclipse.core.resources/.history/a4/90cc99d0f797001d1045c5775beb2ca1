@@ -1,0 +1,13 @@
+package com.kocmetehan.bikemate.service;
+
+import com.kocmetehan.bikemate.model.User;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public User saveUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

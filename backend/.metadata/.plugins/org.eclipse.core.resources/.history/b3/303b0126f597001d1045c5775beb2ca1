@@ -1,0 +1,3 @@
+# Remote mysql server
+spring.data.mongodb.uri= sql11.freesqldatabase.com
+spring.datasource.driverClassName=com.mysql.jdbc.Driver

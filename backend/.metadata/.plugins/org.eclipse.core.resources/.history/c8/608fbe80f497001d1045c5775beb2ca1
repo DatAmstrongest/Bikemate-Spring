@@ -1,0 +1,2 @@
+# Remote mysql server
+spring.data.mongodb.uri= sql11.freesqldatabase.com

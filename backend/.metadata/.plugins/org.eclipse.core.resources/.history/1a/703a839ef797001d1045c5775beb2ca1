@@ -1,0 +1,5 @@
+package com.kocmetehan.bikemate.repository;
+
+public interface UserRepository {
+
+}
