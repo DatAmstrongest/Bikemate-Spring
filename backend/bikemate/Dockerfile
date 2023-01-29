@@ -1,4 +1,7 @@
 FROM maven:3.8.5-openjdk-17
+
+ENV DB_HOST=db
+
 WORKDIR /app
 COPY . /app
 # At build time, only compile the application but do not run it
