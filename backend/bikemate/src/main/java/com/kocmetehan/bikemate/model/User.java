@@ -20,16 +20,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(uniqueConstraints = {
+@Table(name="users", uniqueConstraints = {
 		@UniqueConstraint(columnNames = "username"),
 		@UniqueConstraint(columnNames = "email")
 })
 public class User {
-	
-	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "user_id")
 	private int id;
 	
 	@NonNull

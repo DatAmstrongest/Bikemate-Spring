@@ -56,7 +56,6 @@ public class AuthController {
 
 		Authentication authentication = authenticationManager.authenticate(
 				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
-	
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 		String jwt = jwtUtils.generateJwtToken(authentication);
 		
@@ -102,6 +101,7 @@ public class AuthController {
 			roles.add(userRole);
 		}
 		else {
+			System.out.println(ERole.ADMIN);
 			strRoles.forEach(role -> {
 				switch (role) {
 				case "admin":
