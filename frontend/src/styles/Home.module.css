@@ -2,29 +2,29 @@
   color: rgb(6, 232, 147);
 }
 
+.logo {
+  fill: rgb(6, 232, 147);
+}
+
 /* Button Styles */
 .login_button {
   background-color: rgb(6, 232, 147);
   color: rgb(10, 78, 131);
-  width: 30em;
+  width: 20em;
+  height: 3em;
 }
 .login_button:hover {
   background-color: rgb(6, 232, 147);
   color: rgb(10, 78, 131);
-  width: 30em;
 }
+
 .signup_button {
   background-color: rgb(54, 190, 209);
   color: rgb(10, 78, 131);
-  width: 30em;
+  width: 20em;
+  height: 3em;
 }
-
 .signup_button:hover {
   background-color: rgb(54, 190, 209);
   color: rgb(10, 78, 131);
-  width: 30em;
-}
-
-.logo {
-  fill: rgb(6, 232, 147);
 }
