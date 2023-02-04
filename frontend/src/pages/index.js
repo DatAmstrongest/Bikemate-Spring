@@ -19,9 +19,7 @@ export default function Home() {
               <Typography>
                 <h1 className={styles.title}>Welcome to Bikemate</h1>
                 <br />
-                <div>
-                  <Logo style={styles.logo} />
-                </div>
+                <Logo style={styles.logo} />
                 <br />
                 <InputButton
                   label="Login"
