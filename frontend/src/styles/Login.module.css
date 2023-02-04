@@ -5,3 +5,16 @@
 .logo {
   fill: rgb(6, 232, 147);
 }
+
+.card {
+  background-color: rgb(10, 78, 131);
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 1rem;
+}
+
+.grid {
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+}

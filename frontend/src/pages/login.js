@@ -1,31 +1,23 @@
 import Grid from "@mui/material/Grid";
 import Logo from "../../public/images/logo.js";
 import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 import styles from "../styles/Login.module.css";
 const Login = () => {
   return (
-    <Grid
-      container
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
-      style={{ minHeight: "60vh" }}
-      spacing={2}
-    >
-      <Grid item xs={12}>
-        <Logo height="120" width="120" fill={styles.logo} />
+    <Grid className={styles.grid} container spacing={2} direction="column">
+      <Grid item>
+        <Box textAlign="center">
+          <Card className={styles.card} sx={{ boxShadow: 5 }}>
+            <CardContent>
+              <Logo style={styles.logo} />
+              <br />
+            </CardContent>
+          </Card>
+        </Box>
       </Grid>
-      <Grid item xs={12}>
-        <h1 className={styles.title}>Bikemate</h1>
-      </Grid>
-      <Grid marginTop={10} item xs={12}>
-        <TextField
-          label="With normal TextField"
-          id="outlined-start-adornment"
-          sx={{ m: 1, width: "25ch" }}
-        />
-      </Grid>
-      <Grid item xs={12}></Grid>
     </Grid>
   );
 };
