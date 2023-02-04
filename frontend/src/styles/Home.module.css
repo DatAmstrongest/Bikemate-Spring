@@ -1,9 +1,23 @@
 .title {
   color: rgb(6, 232, 147);
+  text-align: center;
 }
 
 .logo {
   fill: rgb(6, 232, 147);
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: rgb(10, 78, 131);
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 1rem;
+}
+.grid {
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
 }
 
 /* Button Styles */
@@ -12,6 +26,7 @@
   color: rgb(10, 78, 131);
   width: 20em;
   height: 3em;
+  margin-bottom: 1rem;
 }
 .login_button:hover {
   background-color: rgb(6, 232, 147);
@@ -23,6 +38,7 @@
   color: rgb(10, 78, 131);
   width: 20em;
   height: 3em;
+  margin-bottom: 2rem;
 }
 .signup_button:hover {
   background-color: rgb(54, 190, 209);
