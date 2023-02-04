@@ -29,7 +29,7 @@ export default function Home() {
                 label="Sign Up"
                 link="signup"
                 customClass={styles.signup_button}
-              ></InputButton>
+              />
             </CardContent>
           </Card>
         </Box>
