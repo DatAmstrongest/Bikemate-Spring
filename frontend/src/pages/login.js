@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import Grid from "@mui/material/Grid";
 import SmallerLogo from "../../public/images/smallerLogo.js";
 import TextField from "@mui/material/TextField";
@@ -19,6 +20,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
+
   return (
     <Grid className={styles.grid} container spacing={2} direction="column">
       <Grid item>
@@ -37,23 +39,27 @@ const Login = () => {
               <br />
               <TextField
                 fullWidth
+                variant="filled"
                 label="Email"
                 hintText="Enter"
-                variant="outlined"
                 className={styles.textField}
+                InputLabelProps={{
+                  className: styles.label,
+                }}
               />
               <br />
 
               <TextField
+                variant="filled"
                 fullWidth
-                className={styles.textField}
                 label="Password"
                 type={showPassword ? "text" : "password"}
+                className={styles.textField}
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
                       <IconButton
-                        aria-label="toggle password visibility"
+                        position="end"
                         onClick={handleClickShowPassword}
                       >
                         {showPassword ? <VisibilityOff /> : <Visibility />}
@@ -61,12 +67,23 @@ const Login = () => {
                     </InputAdornment>
                   ),
                 }}
+                InputLabelProps={{
+                  className: styles.label,
+                }}
               />
+
               <InputButton
                 label="Login"
                 link=""
                 customClass={styles.submitButton}
               />
+              <br />
+              <Link className={styles.link} href="signup">
+                <p>
+                  Don't have an account?
+                  <span className={styles.signup}> Sign Up</span>
+                </p>
+              </Link>
             </CardContent>
           </Card>
         </Box>
