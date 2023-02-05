@@ -16,9 +16,11 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.7",
     "@next/font": "13.1.6",
+    "jss-rtl": "^0.3.0",
     "material-ui-icons": "^1.0.0-beta.36",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tss-react": "^4.6.0"
   }
 }
