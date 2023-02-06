@@ -33,13 +33,16 @@
   min-height: 75vh;
 }
 
+.textField:first-of-type {
+  margin-top: 0;
+}
 .textField {
   background-color: rgb(238, 253, 255);
   margin-top: 2rem;
 }
 .textField:last-of-type {
-  margin-top: 2.5rem;
-  margin-bottom: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .signup {

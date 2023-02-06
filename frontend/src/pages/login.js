@@ -1,5 +1,5 @@
-import * as React from "react";
 import Link from "next/link";
+import React from "react";
 import Grid from "@mui/material/Grid";
 import SmallerLogo from "../../public/images/smallerLogo.js";
 import TextField from "@mui/material/TextField";
