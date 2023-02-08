@@ -9,22 +9,40 @@ import { useRouter } from "next/router";
 import InputButton from "@/components/InputButton";
 import styles from "../styles/LoginForm.module.css";
 const LoginForm = () => {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const [showPassword, setShowPassword] = React.useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
+  const submit = async (e) => {
+    e.preventDefault();
+    console.log(
+      JSON.stringify({
+        username,
+        password,
+      })
+    );
+    await fetch("http://localhost:8080/api/auth/signin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        username,
+        password,
+      }),
+    });
 
+    await router.push("/login");
+  };
   const router = useRouter();
   return (
-    <form>
+    <form onSubmit={submit}>
       <TextField
         fullWidth
         variant="filled"
-        label="Email"
+        label="Username"
         className={styles.textField}
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
         InputLabelProps={{
           className: styles.label,
         }}
