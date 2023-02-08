@@ -23,6 +23,8 @@ const LoginForm = () => {
         variant="filled"
         label="Email"
         className={styles.textField}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         InputLabelProps={{
           className: styles.label,
         }}
@@ -35,6 +37,8 @@ const LoginForm = () => {
         label="Password"
         type={showPassword ? "text" : "password"}
         className={styles.textField}
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
