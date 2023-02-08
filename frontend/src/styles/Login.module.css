@@ -7,14 +7,6 @@
   fill: rgb(6, 232, 147);
 }
 
-.label {
-  color: rgb(10, 78, 131);
-}
-
-.label:focus {
-  color: rgb(10, 78, 131);
-}
-
 .link {
   color: rgb(238, 253, 255);
   text-decoration: none;
@@ -33,26 +25,6 @@
   min-height: 75vh;
 }
 
-.textField {
-  background-color: rgb(238, 253, 255);
-  margin-top: 2rem;
-}
-.textField:last-of-type {
-  margin-top: 2.5rem;
-  margin-bottom: 6rem;
-}
-
 .signup {
   font-weight: bold;
-}
-
-.submitButton {
-  background-color: rgb(6, 232, 147);
-  color: rgb(10, 78, 131);
-  width: 20em;
-  height: 3em;
-}
-
-.submitButton:hover {
-  background-color: rgb(6, 232, 147);
 }
