@@ -1,6 +1,8 @@
 .title {
   color: rgb(6, 232, 147);
   font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .logo {
@@ -22,7 +24,6 @@
 .grid {
   align-items: center;
   justify-content: center;
-  min-height: 75vh;
 }
 
 .signup {

@@ -15,7 +15,7 @@ const Login = () => {
         <Box
           textAlign="center"
           sx={{
-            width: 500,
+            width: 600,
             maxWidth: "100%",
           }}
         >

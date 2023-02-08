@@ -1,19 +1,18 @@
-.textField:first-of-type {
-  margin-top: 0;
-}
 .textField {
   background-color: rgb(238, 253, 255);
-  margin-top: 2rem;
 }
 .textField:last-of-type {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .submitButton {
   background-color: rgb(6, 232, 147);
   color: rgb(10, 78, 131);
   width: 20em;
   height: 3em;
+}
+.name {
+  margin-right: 1rem;
 }
 
 .submitButton:hover {

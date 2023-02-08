@@ -12,7 +12,13 @@ export default function Home() {
   return (
     <Grid className={styles.grid} container spacing={2} direction="column">
       <Grid item>
-        <Box textAlign="center">
+        <Box
+          textAlign="center"
+          sx={{
+            width: 600,
+            maxWidth: "100%",
+          }}
+        >
           <Card className={styles.card} sx={{ boxShadow: 5 }}>
             <CardContent>
               <h1 className={styles.title}>Welcome to Bikemate</h1>
