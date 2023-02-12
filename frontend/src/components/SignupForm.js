@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import Grid from "@mui/material/Grid";
 
 import styles from "../styles/SignupForm.module.css";
-import InputButton from "@/components/InputButton";
+import InputButton from "./InputButton";
 
 const SignupForm = () => {
   const [name, setName] = useState("");

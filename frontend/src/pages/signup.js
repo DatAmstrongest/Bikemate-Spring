@@ -6,8 +6,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
 import SmallerLogo from "../../public/images/smallerLogo.js";
-import styles from "@/styles/Signup.module.css";
-import SignupForm from "@/components/SignUpForm.js";
+import styles from "../styles/Signup.module.css";
+import SignupForm from "../components/SignupForm.js";
 
 const Signup = () => {
   return (

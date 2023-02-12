@@ -1,20 +1,13 @@
 package com.kocmetehan.bikemate.model;
-
 import java.util.Set;
-
 import org.hibernate.validator.constraints.Length;
-
 import jakarta.persistence.*;
-
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 
 @Data
 @NoArgsConstructor
@@ -27,6 +20,7 @@ import lombok.Setter;
 public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="user_id")
 	private int id;
 	
 	@NonNull
@@ -56,6 +50,18 @@ public class User {
 	@ManyToMany(cascade = CascadeType.MERGE)
 	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name="user_id"),inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private Set<Role> roles;
+	
+	@OneToMany(mappedBy="user")
+    private Set<Post> posts;
+	
+	@OneToMany(mappedBy="user")
+    private Set<Comment> comments;
+	
+	@ManyToMany()
+	private Set<User> followers;
+	
+	@ManyToMany()
+	private Set<User> followings;
 	
 	
 	

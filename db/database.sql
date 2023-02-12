@@ -1,5 +1,5 @@
 CREATE TABLE roles(
-    id INT PRIMARY KEY,
+    role_id INT PRIMARY KEY,
     name TEXT
 );
 INSERT INTO roles VALUES (1,'USER');
